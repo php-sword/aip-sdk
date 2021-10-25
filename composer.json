@@ -1,0 +1,20 @@
+{
+    "name": "php-sword/aip-sdk",
+    "type": "library",
+    "description": "baidu pulic ai php sdk",
+    "authors": [
+        {
+            "name": "baidu"
+        }
+    ],
+    "license": "Apache-2.0",
+    "require": {
+        "php": ">=5.3.3"
+    },
+    "autoload": {
+        "files": [],
+        "psr-4": {
+            "Baidu\\": "src/"
+        }
+    }
+}
