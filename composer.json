@@ -1,15 +1,20 @@
 {
     "name": "php-sword/aip-sdk",
     "type": "library",
+    "keywords": ["php", "swoole", "sword", "aip"],
     "description": "baidu pulic ai php sdk",
+    "homepage" : "https://github.com/php-sword/aip-sdk",
     "authors": [
         {
-            "name": "baidu"
+            "name": "kyour",
+            "email": "kyour@vip.qq.com"
         }
     ],
     "license": "Apache-2.0",
     "require": {
-        "php": ">=5.3.3"
+        "php": ">=7.0.0"
+    },
+    "require-dev": {
     },
     "autoload": {
         "files": [],
