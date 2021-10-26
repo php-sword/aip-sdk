@@ -16,9 +16,6 @@
 */
 namespace Baidu\Lib;
 
-require_once 'AipHttpClient.php';
-require_once 'AipHttpUtil.php';
-
 /**
  * Aip Base 基类
  */
