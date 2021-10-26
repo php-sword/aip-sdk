@@ -27,7 +27,7 @@ class AipBase {
      */
     protected $accessTokenUrl = 'https://aip.baidubce.com/oauth/2.0/token';
 
-     /**
+    /**
      * 反馈接口
      * @var string
      */
@@ -267,7 +267,12 @@ class AipBase {
      * @return array
      */
     private function readAuthObj(){
-        $content = @file_get_contents($this->getAuthFilePath());
+        $file = $this->getAuthFilePath();
+        if(!file_exists($file)){
+            return null;
+        }
+
+        $content = @file_get_contents($file);
         if($content !== false){
             $obj = json_decode($content, true);
             $this->isCloudUser = $obj['is_cloud_user'];
